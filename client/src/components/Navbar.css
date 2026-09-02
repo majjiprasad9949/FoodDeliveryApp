@@ -1,0 +1,119 @@
+.navbar {
+  background-color: whitesmoke;
+
+  border-bottom: 1px solid #eeeeee;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+}
+.active-link {
+  color: #ff4500;
+  font-weight: 600;
+  border-bottom: 2px solid #ff4500;
+  padding-bottom: 4px;
+}
+
+.navbar-container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 15px 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.logo-img {
+  width: 70px;
+  height: 70px;
+}
+.nav-links {
+  display: flex;
+
+  gap: 45px;
+}
+
+.nav-links a {
+  color: #222;
+
+  text-decoration: none;
+
+  font-size: 17px;
+
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #ff4d30;
+}
+
+.nav-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.cart-btn {
+  color: #222;
+
+  text-decoration: none;
+
+  border: 1px solid #ddd;
+
+  padding: 10px 18px;
+
+  border-radius: 6px;
+}
+
+.login-btn {
+  border: none;
+
+  background-color: red;
+
+  color: white;
+
+  padding: 11px 22px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+  text-decoration: none;
+}
+/* Navbar.css — add this */
+.cart-btn {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background: #ff4500;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  line-height: 1;
+}

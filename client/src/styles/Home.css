@@ -1,0 +1,1030 @@
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 570px;
+
+  background: rgb(255, 82, 0);
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 80px 20px;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+  width: 100%;
+
+  max-width: 1000px;
+
+  position: relative;
+
+  z-index: 10;
+}
+
+.hero h1 {
+  color: white;
+
+  font-size: 56px;
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: white;
+
+  font-size: 20px;
+
+  margin-bottom: 35px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.hero-search {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  max-width: 900px;
+
+  margin: auto;
+}
+
+
+/* Location */
+.location-box {
+  position: relative;
+}
+
+.location-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  margin-top: 6px;
+  padding: 6px 0;
+  z-index: 10;
+}
+
+.location-dropdown li {
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.location-dropdown li:hover {
+  background: #fff5eb;
+}
+
+.location-icon {
+  font-size: 22px;
+
+  margin-right: 10px;
+}
+
+.location-box input {
+  border: none;
+
+  outline: none;
+
+  flex: 1;
+
+  font-size: 16px;
+}
+
+.arrow {
+  font-size: 22px;
+
+  color: #555;
+}
+
+
+/* Food Search */
+
+.food-search {
+  width: 430px;
+
+  height: 62px;
+
+  background: white;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding-left: 20px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.food-search input {
+  border: none;
+
+  outline: none;
+
+  flex: 1;
+
+  font-size: 16px;
+}
+
+.food-search button {
+  width: 70px;
+
+  height: 62px;
+
+  border: none;
+
+  background: white;
+
+  border-radius: 0 12px 12px 0;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   LEFT SIDE IMAGES
+========================= */
+
+.hero-left-images {
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 330px;
+
+  height: 100%;
+
+  z-index: 3;
+
+  pointer-events: none;
+}
+
+
+/* =========================
+   RIGHT SIDE IMAGES
+========================= */
+
+.hero-right-images {
+  position: absolute;
+
+  right: 0;
+
+  top: 0;
+
+  width: 330px;
+
+  height: 100%;
+
+  z-index: 3;
+
+  pointer-events: none;
+}
+
+
+/* =========================
+   COMMON IMAGE STYLE
+========================= */
+
+.side-img {
+  position: absolute;
+
+  object-fit: cover;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   LEFT IMAGE 1
+========================= */
+
+.side-img-1 {
+  width: 200px;
+  height: 250px;
+  left: -50px;
+  top: 40px;
+
+  object-fit: cover;
+  object-position: center top;
+
+  border-radius: 0 45px 45px 0;
+  transform: rotate(-5deg);
+}
+
+
+/* LEFT IMAGE 2 */
+
+.side-img-2 {
+  width: 180px;
+
+  height: 190px;
+
+  left: -30px;
+
+  bottom: 80px;
+
+  border-radius: 50%;
+
+  transform: rotate(12deg);
+}
+
+
+/* LEFT IMAGE 3 */
+
+.side-img-3 {
+  width: 170px;
+
+  height: 180px;
+
+  left: 110px;
+
+  bottom: -45px;
+
+  border-radius: 45% 45% 0 0;
+
+  transform: rotate(-10deg);
+}
+
+
+/* =========================
+   RIGHT IMAGE 1
+========================= */
+
+.side-img-4 {
+  width: 240px;
+
+  height: 270px;
+
+  right: -50px;
+
+  top: 30px;
+
+  border-radius: 45px 0 0 45px;
+
+  transform: rotate(8deg);
+}
+
+
+/* RIGHT IMAGE 2 */
+
+.side-img-5 {
+  width: 180px;
+
+  height: 190px;
+
+  right: -25px;
+
+  bottom: 80px;
+
+  border-radius: 50%;
+
+  transform: rotate(-12deg);
+}
+
+
+/* RIGHT IMAGE 3 */
+
+.side-img-6 {
+  width: 170px;
+
+  height: 180px;
+
+  right: 120px;
+
+  bottom: -50px;
+
+  border-radius: 45% 45% 0 0;
+
+  transform: rotate(10deg);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+  .hero-left-images,
+  .hero-right-images {
+    opacity: 0.45;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .hero {
+    min-height: 650px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-search {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .location-box,
+  .food-search {
+    width: 90%;
+
+    max-width: 500px;
+  }
+
+  .hero-left-images,
+  .hero-right-images {
+    opacity: 0.2;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-left-images,
+  .hero-right-images {
+    display: none;
+  }
+
+}
+
+
+/* =========================
+   SEARCH AREA
+========================= */
+
+.hero-search {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  max-width: 900px;
+
+  margin: auto;
+}
+
+
+/* Location */
+
+.location-box {
+  width: 330px;
+
+  height: 62px;
+
+  background: white;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 18px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.location-icon {
+  font-size: 22px;
+
+  margin-right: 10px;
+}
+
+.location-box input {
+  border: none;
+
+  outline: none;
+
+  flex: 1;
+
+  font-size: 16px;
+}
+
+.arrow {
+  font-size: 22px;
+
+  color: #555;
+}
+
+
+/* Food Search */
+
+.food-search {
+  width: 430px;
+
+  height: 62px;
+
+  background: white;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding-left: 20px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.food-search input {
+  border: none;
+
+  outline: none;
+
+  flex: 1;
+
+  font-size: 16px;
+}
+
+.food-search button {
+  height: 62px;
+
+  width: 70px;
+
+  border: none;
+
+  background: white;
+
+  border-radius: 0 12px 12px 0;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   FLOATING FOOD IMAGES
+========================= */
+
+.hero-food {
+  position: absolute;
+
+  width: 260px;
+  height: 260px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 8px solid white;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+  z-index: 1;
+}
+
+
+/* Left */
+
+.hero-food-left {
+  left: -70px;
+
+  bottom: 50px;
+
+  transform: rotate(-12deg);
+}
+
+
+/* Right */
+
+.hero-food-right {
+  right: -70px;
+
+  top: 50px;
+
+  transform: rotate(12deg);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .hero-food {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-search {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .location-box,
+  .food-search {
+    width: 90%;
+    max-width: 500px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: 650px;
+
+    padding: 60px 15px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-food {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero-food-left {
+    left: -45px;
+    bottom: 20px;
+  }
+
+  .hero-food-right {
+    right: -45px;
+    top: 20px;
+  }
+}
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+.search-box {
+  display: flex;
+
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  background-color: white;
+
+  border-radius: 10px;
+
+  padding: 6px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.search-box input {
+  flex: 1;
+
+  border: none;
+
+  outline: none;
+
+  padding: 15px;
+
+  font-size: 16px;
+}
+
+.search-box button {
+  border: none;
+
+  padding: 0 25px;
+
+  border-radius: 7px;
+
+  background-color: #ff4d30;
+
+  color: white;
+
+  font-size: 15px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.categories {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 70px 20px;
+}
+
+.categories h2 {
+  text-align: center;
+
+  font-size: 32px;
+
+  margin-bottom: 40px;
+}
+
+.category-list {
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 45px;
+}
+
+.category-card {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 22px;
+
+  background-color: white;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-30px);
+
+  box-shadow: 0 20px 40px rgba(132, 45, 202, 0.295);
+}
+
+.category-card img {
+  width: 100%;
+
+  height: 140px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.category-card p {
+  margin: 0;
+
+  padding: 15px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   RESTAURANTS
+========================= */
+
+.restaurants {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 20px 20px 80px;
+}
+
+.restaurants h2 {
+  text-align: center;
+
+  font-size: 32px;
+
+  margin-bottom: 40px;
+}
+
+.restaurant-list {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 130px;
+}
+
+.restaurant-card {
+  background-color:white;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  border: 1px solid #11101002;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-15px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   RESTAURANT IMAGE
+========================= */
+
+
+.restaurant-card img {
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  display: block;
+
+  background-color: #ffffff;
+}
+
+
+/* =========================
+   RESTAURANT INFORMATION
+========================= */
+
+.restaurant-info {
+  padding: 18px;
+}
+
+.restaurant-info h3 {
+  margin: 0 0 8px;
+
+  font-size: 20px;
+}
+
+.restaurant-info p {
+  margin: 0;
+
+  color: #666666;
+
+  font-size: 15px;
+}
+
+
+/* =========================
+   RESPONSIVE - TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .category-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .restaurant-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: 450px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .search-box {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .search-box button {
+    padding: 14px;
+  }
+
+  .category-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .restaurant-list {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-card img {
+    height: 220px;
+  }
+
+}
+/* =========================
+   POPULAR DISHES
+========================= */
+
+.foods {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 20px 20px 80px;
+}
+
+.foods h2 {
+  text-align: center;
+
+  font-size: 32px;
+
+  margin-bottom: 40px;
+}
+
+.food-list {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .food-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .food-list {
+    grid-template-columns: 1fr;
+  }
+
+}
+.promo-section {
+  max-width: 1200px;
+
+  margin: 20px auto 60px;
+
+  padding: 50px;
+
+  border-radius: 18px;
+
+  background: #fff3ed;
+
+  text-align: center;
+}
+
+.promo-content {
+  max-width: 700px;
+
+  margin: 0 auto;
+}
+
+.promo-label {
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 12px;
+}
+
+.promo-content h2 {
+  font-size: 36px;
+
+  line-height: 1.2;
+
+  margin-bottom: 15px;
+}
+
+.promo-content > p:not(.promo-label) {
+  color: #666;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  margin-bottom: 25px;
+}
+
+.promo-btn {
+  padding: 12px 28px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #ff4d30;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.promo-btn:hover {
+  transform: translateY(-2px);
+}
+.page {
+  min-height: 60vh;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 80px 20px;
+
+  text-align: center;
+}
+
+.page h1 {
+  font-size: 40px;
+
+  margin-bottom: 15px;
+}
+
+.page p {
+  color: #666;
+
+  font-size: 17px;
+}
