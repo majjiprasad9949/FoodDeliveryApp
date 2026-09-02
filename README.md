@@ -1,133 +1,108 @@
 # 🍔 Foodie — Full-Stack Food Delivery App
 
-A full-stack food ordering web application built with **React** on the frontend and **Node.js/Express** on the backend. Users can browse restaurants, search and filter food, add items to a cart, and register/log in with secure authentication.
+A full-stack food ordering web application built with **React** on the frontend and **Node.js/Express** on the backend.
+
+Users can browse restaurants, search and filter food, add items to a cart, and register/log in with secure authentication.
+
+---
 
 ## 🚀 Live Demo
 
-🔗 **Frontend:** https://food-delivery-app-mu-murex.vercel.app
-
-🔗 **Backend API:** https://fooddeliveryapp-25o1.onrender.com
+- **Frontend:** https://client-9dhul6hs3-majjiprasad9949s-projects.vercel.app/
+- **Backend API:** https://fooddeliveryapp-25o1.onrender.com
 
 ---
 
 ## ✨ Features
 
-- 🏠 **Home page** with hero search, category browsing, and featured restaurants/dishes
-- 🔍 **Search & filter** — search restaurants or dishes by name/cuisine in real time
-- 🍽️ **Restaurant details page** with a dedicated menu per restaurant
-- 🛒 **Shopping cart** — add/remove items, adjust quantity, view total, powered by React Context API
-- 🔐 **Authentication** — register and login with hashed passwords (bcrypt) and JWT-based sessions
-- 📍 **Location selector** with a dropdown of delivery locations
-- 🎨 **Responsive, styled UI** with a consistent orange food-delivery theme
-- 🧭 **Client-side routing** with React Router (Home, Restaurants, Offers, Cart, Contact, Login, Register)
+- 🏠 **Home Page** — Hero section, search, food categories, and featured restaurants
+- 🔍 **Search & Filter** — Search restaurants and food items by name or cuisine
+- 🍽️ **Restaurant Details** — View individual restaurants and their food menus
+- 🛒 **Shopping Cart** — Add/remove items, increase/decrease quantity, clear cart, and view total price
+- 🔐 **Authentication** — User registration and login using bcrypt password hashing and JWT authentication
+- 📍 **Location Selector** — Select a delivery location
+- 🎨 **Responsive UI** — Clean and responsive food-delivery design
+- 🧭 **Client-Side Routing** — Navigation using React Router
+- 📱 **Multiple Pages** — Home, Restaurants, Offers, Cart, Contact, Login, Register, and Restaurant Details
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Frontend**
-- React (Hooks: `useState`, `useContext`)
-- React Router DOM
-- Context API (cart state management)
-- CSS (custom, no framework)
-- Vite (build tool/dev server)
+### Frontend
 
-**Backend**
+- React
+- React Hooks (`useState`, `useContext`)
+- React Router DOM
+- Context API
+- CSS
+- Vite
+
+### Backend
+
 - Node.js
-- Express
-- bcryptjs (password hashing)
-- jsonwebtoken (JWT authentication)
+- Express.js
+- bcryptjs
+- JSON Web Token (JWT)
 - CORS
-- dotenv (environment variables)
+- dotenv
+
+### Deployment
+
+- **Frontend:** Vercel
+- **Backend:** Render
+- **Source Code:** GitHub
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 FoodDeliveryApp/
-├── client/                 # React frontend
-│   ├── src/
-│   │   ├── components/     # Navbar, Footer, RestaurantCard, FoodCard
-│   │   ├── context/        # CartContext (global cart state)
-│   │   ├── data/           # Restaurant & food data
-│   │   ├── pages/          # Home, Restaurants, Offers, Cart, Contact, Login, Register
-│   │   └── styles/         # Page-specific CSS
-│   └── public/
 │
-└── server/                 # Express backend
-    └── server.js           # API routes: auth (register/login), restaurants
-```
+├── client/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── RestaurantCard.jsx
+│   │   │   └── FoodCard.jsx
+│   │   │
+│   │   ├── context/
+│   │   │   └── CartContext.jsx
+│   │   │
+│   │   ├── data/
+│   │   │   └── restaurantData.js
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Restaurants.jsx
+│   │   │   ├── RestaurantDetails.jsx
+│   │   │   ├── Offers.jsx
+│   │   │   ├── Cart.jsx
+│   │   │   ├── Contact.jsx
+│   │   │   ├── Login.jsx
+│   │   │   └── Register.jsx
+│   │   │
+│   │   └── styles/
+│   │       └── Page-specific CSS files
+│   │
+│   └── package.json
+│
+├── server/
+│   ├── server.js
+│   ├── package.json
+│   └── .env
+│
+├── .gitignore
+└── README.md
 
----
 
-## 🚀 Getting Started
-
-### Prerequisites
-- [Node.js](https://nodejs.org/) installed (v16+ recommended)
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/yourusername/foodie-app.git
-cd foodie-app
-```
-
-### 2. Set up the backend
-```bash
-cd server
-npm install
-```
-
-Create a `.env` file inside `server/`:
-```
-PORT=5000
-JWT_SECRET=your_own_secret_key_here
-```
-
-Start the server:
-```bash
-node server.js
-```
-The API will run on `http://localhost:5000`.
-
-### 3. Set up the frontend
-In a new terminal:
-```bash
-cd client
-npm install
-npm run dev
-```
-The app will run on `http://localhost:5173`.
-
----
-
-## 🔑 API Endpoints
-
-| Method | Endpoint               | Description              |
-|--------|-------------------------|---------------------------|
-| POST   | `/api/auth/register`   | Register a new user       |
-| POST   | `/api/auth/login`      | Log in an existing user   |
-| GET    | `/api/restaurants`     | Get list of restaurants   |
-
----
-
-## 📌 Future Improvements
-
-- Persist users in a real database (MongoDB/PostgreSQL) instead of in-memory storage
-- Order history and checkout flow
-- Restaurant owner/admin dashboard
-- Deploy frontend (Vercel/Netlify) and backend (Render/Railway)
-
----
 
 ## 👤 Author
 
+**Majji Prasad**
 
-- GitHub: [Majji Prasad](https://github.com/majjiprasad9949)
-- LinkedIn: [Majji Prasad](https://www.linkedin.com/in/prasadmajji9949)
-
----
-
-## 📄 License
-
-This project is open source and available for learning purposes.
+- GitHub: https://github.com/majjiprasad9949
+- LinkedIn: https://www.linkedin.com/in/prasadmajji9949
