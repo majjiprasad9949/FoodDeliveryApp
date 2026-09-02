@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -13,26 +13,42 @@ import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
 import RestaurantDetails from "./pages/RestaurantDetails";
 
-function App() {
+function AppContent() {
+  const location = useLocation();
+
+  // Hide Navbar and Footer on Login and Register pages
+  const isAuthPage =
+    location.pathname === "/login" ||
+    location.pathname === "/register";
+
   return (
-    <BrowserRouter>
-      <Navbar />
+    <>
+      {!isAuthPage && <Navbar />}
 
       <Routes>
-
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+
         <Route path="/" element={<Home />} />
         <Route path="/restaurants" element={<Restaurants />} />
         <Route path="/offers" element={<Offers />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/restaurant/:id" element={<RestaurantDetails />} />
-
-
+        <Route
+          path="/restaurant/:id"
+          element={<RestaurantDetails />}
+        />
       </Routes>
 
-      <Footer />
+      {!isAuthPage && <Footer />}
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
     </BrowserRouter>
   );
 }
