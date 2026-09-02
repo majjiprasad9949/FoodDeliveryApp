@@ -2,7 +2,11 @@
 
 A full-stack food ordering web application built with **React** on the frontend and **Node.js/Express** on the backend. Users can browse restaurants, search and filter food, add items to a cart, and register/log in with secure authentication.
 
-🔗 **Live Demo:** _(add your deployed link here, if hosted)_
+## 🚀 Live Demo
+
+🔗 **Frontend:** https://food-delivery-app-mu-murex.vercel.app
+
+🔗 **Backend API:** https://fooddeliveryapp-25o1.onrender.com
 
 ---
 
@@ -118,7 +122,7 @@ The app will run on `http://localhost:5173`.
 
 ## 👤 Author
 
-**Your Name**
+
 - GitHub: [Majji Prasad](https://github.com/majjiprasad9949)
 - LinkedIn: [Majji Prasad](https://www.linkedin.com/in/prasadmajji9949)
 
